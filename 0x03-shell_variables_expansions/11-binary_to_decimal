@@ -1,3 +1,2 @@
 #!/bin/bash
-decimal=0; power=0; binary=$BINARY; for ((i=${#binary}-1; i>=0; i--)); do digit=${binary:i:1}; decimal=$((decimal + digit * 2**power)); power=$((power + 1)); done; echo $decimal
-
+echo $((2#$BINARY))
